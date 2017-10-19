@@ -19,5 +19,9 @@ extension Config {
     /// schemas prepared before the app boots
     private func setupPreparations() throws {
         preparations.append(Post.self)
+        preparations.append(Country.self)
+        preparations.append(Capital.self)
+        preparations.append(State.self)
+        preparations.append(Pivot<Country, State>.self)
     }
 }
